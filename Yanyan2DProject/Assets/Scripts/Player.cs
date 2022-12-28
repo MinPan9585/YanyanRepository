@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         directionFactor = Input.GetAxisRaw("Horizontal");
+
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb2d.AddForce(Vector2.up * jumpForce);
